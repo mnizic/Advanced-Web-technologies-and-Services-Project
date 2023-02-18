@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+                                                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <wb-module deploy-name="mnizic-aplikacija_3-1.0.0">
+                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="mnizic-zadaca_3_lib_03_1-1.0.3.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mnizic-zadaca_3_lib_03_1/mnizic-zadaca_3_lib_03_1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mnizic-zadaca_3_lib_06_1-1.0.3.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mnizic-zadaca_3_lib_06_1/mnizic-zadaca_3_lib_06_1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <property name="java-output-path" value="/mnizic-zadaca_2_wa_1/build/classes"/>
+                                
+        
+        
+        <property name="context-root" value="mnizic-aplikacija_3"/>
+                                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </wb-module>
+                                                    
+
+
+
+
+
+
+
+
+
+
+
+
+</project-modules>

@@ -1,0 +1,32 @@
+cd /opt/glassfish6/bin
+
+# za kreiranje JDBC bazena veza NWTiS_DZ3_Pool
+
+./asadmin --host localhost --port 4949 create-jdbc-connection-pool --datasourceclassname org.hsqldb.jdbc.JDBCDataSource --restype javax.sql.DataSource --property PortNumber=9001:Password=nwtis#g1:User=nwtis_g1:serverName=localhost:DatabaseName=nwtis_g1:url="jdbc\:hsqldb\:hsql\://localhost\:9001/nwtis_g1" NWTiS_DZ3_Pool
+
+# za kreiranje JDBC resursa jdbc/NWTiS_DZ3
+
+./asadmin --host localhost --port 4949 create-jdbc-resource --connectionpoolid NWTiS_DZ3_Pool jdbc/NWTiS_DZ3
+
+##### ostale pomoćne komande ####
+
+# za provjeru JDBC bazena veza NWTiS_DZ3_Pool
+
+./asadmin --host localhost --port 4949 ping-connection-pool NWTiS_DZ3_Pool
+
+# za pregled svih JDBC bazena veza 
+
+./asadmin --host localhost --port 4949 list-jdbc-connection-pools
+
+# za pregled svih JDBC resursa 
+
+./asadmin --host localhost --port 4949 list-jdbc-resources
+
+# za brisanje JDBC bazena veza NWTiS_DZ3_Pool
+
+./asadmin --host localhost --port 4949 delete-jdbc-connection-pool --cascade=true NWTiS_DZ3_Pool
+
+# za brisanje JDBC resursa jdbc/NWTiS_DZ3
+
+./asadmin --host localhost --port 4949 delete-jdbc-resource jdbc/NWTiS_DZ3
+
